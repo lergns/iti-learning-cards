@@ -22,7 +22,7 @@ export const Routes = () => {
   return (
     <div>
       <Switch>
-        <Route exact path={"/"} render={() => <div>Empty page</div>} />
+        <Route exact path={"/"} render={() => <Redirect to={Path.LogIn} />} />
         <Route path={Path.LogIn} render={() => <LogIn />} />
         <Route path={Path.Registration} render={() => <Registration />} />
         <Route path={Path.Profile} render={() => <Profile />} />
